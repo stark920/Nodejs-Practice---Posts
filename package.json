@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.3.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "mongo5",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": "v16.x"
+  }
+}
