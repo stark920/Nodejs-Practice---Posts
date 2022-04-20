@@ -22,6 +22,7 @@ const postSchema = new mongoose.Schema(
         values: ['private', 'public'],
         message: '{PATH}: 請選擇私人(private)或公開(public)',
       },
+      required: [true, '{PATH}: 請選擇私人(private)或公開(public)'],
       trim: true,
     },
     image: {
