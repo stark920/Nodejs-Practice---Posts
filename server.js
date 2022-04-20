@@ -64,7 +64,9 @@ const requestListener = async (req, res) => {
         if (validateResult) {
           errorHandler(res, validateResult, 400);
         } else {
-          const updatePosts = await Posts.findByIdAndUpdate(id, data);
+          const updatePosts = await Posts.findByIdAndUpdate(id, data, {
+            new: true,
+          });
           successHandler(res, updatePosts);
         }
       } catch (error) {
