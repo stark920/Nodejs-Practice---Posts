@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "36940892-50a6-4076-8f50-b4003e7f16d5",
+		"name": "Posts Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OPTIONS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET POSTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST POSTS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"test888\",\n    \"type\": \"private\",\n    \"name\": \"Tester\",\n    \"tags\": [\"123\",\"456\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ONE POSTS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/posts/625f68291f65022598f44170",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625f68291f65022598f44170"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ALL POSTS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH POSTS",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"test\",\n    \"type\": \"public\",\n    \"name\": \"Tester007\",\n    \"tags\": [\"aaa7\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-reaches-13715.herokuapp.com/posts/625f67fc1f65022598f44167",
+					"protocol": "https",
+					"host": [
+						"agile-reaches-13715",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625f67fc1f65022598f44167"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
